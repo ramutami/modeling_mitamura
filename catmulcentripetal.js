@@ -13,7 +13,7 @@ const height = drawbox.clientHeight-2*padding;
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xffffff);
 const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
-camera.position.set(0, 0, 15);
+camera.position.set(0, 0, 25);
 
 //Threeのrendererを持ってくる
 const renderer = new THREE.WebGLRenderer();
