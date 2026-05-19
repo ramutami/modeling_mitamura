@@ -1,0 +1,75 @@
+/* 諸々の見た目を決める。 */
+
+/* 本文 */
+body {
+    background-color: #fdfdfd;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 200px;
+}
+
+:root {
+    --content-width: 90%;
+    --content-max-width: 650px;
+}
+
+#box,
+#box2,
+#drawarea,
+#drawareacentripetal {
+    width: var(--content-width);
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+button {
+  padding: 15px 20px;
+  font-size: 15px;
+}
+
+/* id指定したものは#でいける。 */
+div{
+    border-radius: 16px;
+    border: 1px solid #e8f8f7;
+    padding: 16px;
+    background: #239399;
+}
+#box{
+    border-radius: 16px;
+    border: 1px solid #e8eef8;
+    padding: 16px;
+    background: #d8eff3;
+    margin:0 auto;
+    text-align: left;
+}
+#box2{
+    border-radius: 16px;
+    border: 0px solid #e8eef8;
+    padding: 16px;
+    background: #ffffff;
+    margin:0 auto;
+    text-align: left;
+}
+#drawarea{
+    border-radius: 16px;
+    border: 1px solid #e8eef8;
+    background: #d8eff3;
+    aspect-ratio: 1 / 1; 
+    min-height: 500px;
+    padding: 10px;
+}
+
+#drawareacentripetal{
+    border-radius: 16px;
+    border: 1px solid #e8eef8;
+    background: #d8eff3;
+    aspect-ratio: 1 / 1; 
+    min-height: 500px;
+    padding: 10px;
+}
+
+
+
+

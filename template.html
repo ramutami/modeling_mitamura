@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>  
+        <!-- ページの設定など -->
+        <meta charset ="UTF-8">
+        <title>modeling_kadai </title>
+        <!-- .cssの読み込み -->
+        <link rel="stylesheet" href="template.css" >  
+    </head>
+    <body>  
+        <!-- 本文 -->
+        <h1 id = "title">パラメトリック曲線</h1>
+        05242628　三田村彰大（理学部地球惑星物理学科）
+        <br>
+        <br>
+        <p>
+        <div id="box2">　３次Catmull-Romスプラインを、Uniformなパラメタ区分の場合及びCentripetalなパラメタ区分の場合それぞれについて実装した。
+        <br>
+        　html・css・jsの雛形の作成はAIに相談しながら進めた。その上で、制御点の座標からパラメトリック曲線を計算する関数（jsファイル中のCatmullRom関数やupdateCurve関数）を実装した。</div>
+        </p>
+        <h2 id = "title">(1)３次Catmull-Romスプライン、Uniformなパラメタ区分</h2>
+        <p>
+        <div id="box">　マウスで制御点を動かすとそれらを補完するようなパラメトリック曲線を描画する。スライダで制御点の個数を調整し、リセットボタンで制御点の位置を初期配置に戻す。</div>
+        </p>
+        <p>
+        <div id="drawarea"></div>
+        </p>
+        <input type="range" id="numpointsslider" min="2" max="17" value="10">
+        <button id="resetbtn">リセット</button><br>
+
+        <br>
+        <br>
+
+        <h2 id = "title">(2)３次Catmull-Romスプライン、Centripetalなパラメタ区分</h2>
+        <p>
+        <div id="box">　マウスで制御点を動かすとそれらを補完するようなパラメトリック曲線を描画する。スライダで制御点の個数を調整し、リセットボタンで制御点の位置を初期配置に戻す。</div>
+        </p>
+        <p>
+        <div id="drawareacentripetal"></div>
+        </p>
+        <input type="range" id="numpointsslidercentripetal" min="2" max="17" value="10">
+        <button id="resetbtncentripetal">リセット</button><br>
+        
+        
+
+        
+        <!-- .jsの読み込み -->
+        <script type="importmap">
+        {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"
+        }
+        }
+        </script>
+        <script type="module" src="./catmuluniform.js"></script>
+        <script type="module" src="./catmulcentripetal.js"></script>
+
+
+    </body>
+</html>
